@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign dir = Dir.pwd  %}
+  {% assign dir = Dir.pwd() %}
   {{ dir }}
   
   {% assign datasets = Dir.glob '../../datasets/*' %}
