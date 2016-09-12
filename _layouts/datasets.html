@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for ds in datasets %}
+      <h1><a href="{{ site.baseurl }}{{ ds }}">{{ ds }}</a></h1>
+  {% endfor %}
+</div>
