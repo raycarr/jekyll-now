@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="posts">
-  {% assign datasets = Dir.glob '../datasets/*' %}
+  {% Dir.pwd  %}
+  
+  {% assign datasets = Dir.glob '../../datasets/*' %}
   {% for ds in datasets %}
       <h1><a href="{{ site.baseurl }}{{ ds }}">{{ ds }}</a></h1>
   {% endfor %}
