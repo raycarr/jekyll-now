@@ -2,11 +2,13 @@
 layout: default
 ---
 
+{% raw %}
+{% assign dir = Dir.pwd %}
+{{ dir }}
+{% endraw %}
+
 <div class="posts">
-  {% assign dir = Dir.pwd() %}
-  {{ dir }}
-  
-  {% assign datasets = Dir.glob '../../datasets/*' %}
+  {% assign datasets = Dir.glob 'datasets/*' %}
   {% for ds in datasets %}
       <h1><a href="{{ site.baseurl }}{{ ds }}">{{ ds }}</a></h1>
   {% endfor %}
