@@ -1,7 +1,5 @@
 ---
 layout: datasets
 title: Datasets
-permalink: /datasets/
+permalink: /data/
 ---
-
-datasets = Dir.glob '*'
